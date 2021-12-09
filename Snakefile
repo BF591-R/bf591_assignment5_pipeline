@@ -105,7 +105,8 @@ rule multiqc:
 
 rule concat_verse:
 	input:
-		meta = 'sample_metadata.csv'
+		meta = 'sample_metadata.csv',
+		exons = expand('{srr}.exon.txt', srr=srrs)
 	output:
 		mat = 'verse_counts.tsv'
 	run:
