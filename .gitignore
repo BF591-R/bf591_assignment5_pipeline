@@ -1,0 +1,14 @@
+snakejob.*
+.snakemake
+*.swp
+*.bam
+*.gz
+*.txt
+*.tab
+*.out
+GRCm39_primary_star_index/
+*.fa
+*.gtf
+*.sh*
+*.done
+*fastqc*
